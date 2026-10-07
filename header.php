@@ -45,10 +45,16 @@
             ]);
             ?>
         </nav>
-
         <a href="#contact" class="btn btn--primary">
             Book appointment
         </a>
+         <button class="menu-toggle" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+
+        
 
     </div>
 </header>

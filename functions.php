@@ -13,12 +13,12 @@ add_action('after_setup_theme', 'labka_vet_setup');
 
 
 function labka_vet_assets() {
-    wp_enqueue_style(
-        'labka-vet-main',
-        get_template_directory_uri() . '/assets/css/main.css',
-        [],
-        '1.0'
-    );
+   wp_enqueue_style(
+    'labka-vet-main',
+    get_template_directory_uri() . '/assets/css/main.css',
+    [],
+    filemtime(get_template_directory() . '/assets/css/main.css')
+);
 
     wp_enqueue_script(
         'labka-vet-main',
