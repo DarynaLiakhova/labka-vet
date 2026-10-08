@@ -21,7 +21,7 @@
                 </p>
 
                 <div class="hero__actions">
-                    <a href="#" class="btn btn--primary">
+                    <a href="http://labka-vet.local/#contact" class="btn btn--primary">
                         Book appointment
                     </a>
 

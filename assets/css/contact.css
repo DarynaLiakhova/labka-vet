@@ -1,0 +1,271 @@
+/*PAGE HERO*/
+.page-hero {
+    padding: 56px 0 64px;
+    background: #eaf2ec;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #3d5249;
+}
+
+.breadcrumbs a {
+    text-decoration: underline;
+}
+
+.breadcrumbs__current {
+    font-weight: 600;
+    color: #123f35;
+}
+
+.page-hero__label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #2c6b5a;
+}
+
+.page-hero__title {
+    max-width: 820px;
+    margin: 16px 0;
+    font-size: 52px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+}
+
+.page-hero__text {
+    max-width: 640px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.55;
+    color: #3d5249;
+}
+
+/*CONTACT*/
+.contact {
+    padding: 72px 0;
+    background: #f5f7f5;
+}
+
+.contact__inner {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px;
+    border: 1px solid #dfe7e3;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.contact-card__row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-card__icon {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: #eaf2ec;
+}
+
+.contact-card__icon svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: #123f35;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.contact-card__label {
+    display: block;
+    font-size: 14px;
+    color: #687b75;
+}
+
+.contact-card__value {
+    font-size: 18px;
+}
+
+.contact-card__title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.contact-card:has(.hours__row) {
+    gap: 0;
+}
+
+.contact-card__title + .hours__row {
+    margin-top: 12px;
+}
+
+.hours__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #dfe7e3;
+}
+
+.hours__row:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+/*FORM*/
+.contact .appointment__form {
+    border: 1px solid #dfe7e3;
+}
+
+.contact__form-title {
+    margin: 0;
+    font-size: 28px;
+}
+
+.contact__message {
+    margin: 0;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: #eaf2ec;
+    font-weight: 600;
+}
+
+.contact .form-field input,
+.contact .form-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact .form-field input,
+.contact .form-field select {
+    min-height: 52px;
+}
+
+.contact .appointment__submit {
+    min-height: 56px;
+    background: #123f35;
+    color: #fff;
+    font-size: 17px;
+}
+
+.contact__note {
+    margin: 0;
+    font-size: 14px;
+    color: #687b75;
+}
+
+/*FIND US*/
+.find-us {
+    padding: 96px 0;
+    border-top: 1px solid #dfe7e3;
+}
+
+.find-us__label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #2c6b5a;
+}
+
+.find-us__title {
+    margin: 12px 0 48px;
+    font-size: 44px;
+    line-height: 1.1;
+}
+
+.find-us__map {
+    display: grid;
+    place-items: center;
+    height: 420px;
+    margin-bottom: 48px;
+    overflow: hidden;
+    border: 1px dashed #5e7a6d;
+    border-radius: 24px;
+    background: #dde7df;
+    color: #2f463d;
+    font-size: 14px;
+}
+
+.find-us__map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.find-us__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.find-us__card {
+    padding: 24px;
+    border-radius: 16px;
+    background: #f5f7f5;
+}
+
+.find-us__card h3 {
+    margin: 0 0 6px;
+    font-size: 22px;
+}
+
+.find-us__card p {
+    margin: 0;
+    line-height: 1.5;
+    color: #687b75;
+}
+
+/*MEDIA*/
+@media (max-width: 900px) {
+    .contact__inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .find-us__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero__title {
+        font-size: 36px;
+    }
+
+    .find-us {
+        padding: 64px 0;
+    }
+
+    .find-us__title {
+        margin-bottom: 32px;
+        font-size: 30px;
+    }
+
+    .find-us__map {
+        height: 300px;
+        margin-bottom: 32px;
+    }
+}

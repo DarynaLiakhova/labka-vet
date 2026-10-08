@@ -12,9 +12,9 @@
 <div class="topbar">
     <div class="container topbar__inner">
         <div class="topbar__left">
-            <span>[STREET ADDRESS], Bratislava</span>
-            <span>[PHONE]</span>
-            <span>[EMAIL]</span>
+            <span>Drienova 1H, Bratislava</span>
+            <span>+421 900 000 000</span>
+            <span>labkaVet@gmail.com</span>
         </div>
 
         <div class="topbar__right">
