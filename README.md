@@ -23,20 +23,6 @@ Templates for the inner pages (About, Services, Our Team, Contact)
 Blog listing and single post templates using the WordPress loop
 Editable content fields instead of hardcoded text
 
-Structure
-labka-vet/
-├── assets/
-│   ├── css/main.css
-│   ├── js/main.js
-│   └── images/
-├── header.php        # <head>, top bar, logo, navigation
-├── footer.php        # footer, closing tags
-├── front-page.php    # home page
-├── page.php          # default page template
-├── index.php         # fallback template
-├── functions.php     # theme setup, menus, assets
-└── style.css         # theme metadata
-
 Installation
 Clone the repository into the themes folder of a WordPress install:
 bash
